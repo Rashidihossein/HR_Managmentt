@@ -9,6 +9,7 @@ namespace HR_Managment.Domain.Persistence.Contracts
     public interface IGenericRepository<T> where T : class 
     {
 
+
     }
    
 }
