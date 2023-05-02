@@ -9,6 +9,5 @@ namespace HR_Managment.Application.Profiles
 {
     public class MappingProfile:Profile
     {
-
     }
 }
