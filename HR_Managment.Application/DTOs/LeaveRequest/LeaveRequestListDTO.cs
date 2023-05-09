@@ -1,5 +1,5 @@
-﻿using HR_Managment.Domain.Common;
-using HR_Managment.Domain.DTOs;
+﻿using HR_Managment.Application.DTOs.LeaveType;
+using HR_Managment.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

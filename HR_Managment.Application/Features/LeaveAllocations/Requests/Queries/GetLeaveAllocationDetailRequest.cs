@@ -1,4 +1,5 @@
-﻿using HR_Managment.Domain.DTOs;
+﻿using HR_Managment.Application.DTOs.LeaveAllocation;
+using HR_Managment.Application.DTOs;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HR_Managment.Application.Features.LeaveAllocations.Requests.Queries
 {
-    public class GetLeaveAllocationDetailRequest : IRequest<LeaveAlloactionDTO>
+    public class GetLeaveAllocationDetailRequest : IRequest<LeaveAllocationDTO>
     {
         public int Id { get; set; }
     }

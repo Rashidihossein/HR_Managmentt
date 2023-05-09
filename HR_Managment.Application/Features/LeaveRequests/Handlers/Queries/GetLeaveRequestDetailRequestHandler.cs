@@ -4,7 +4,7 @@ using HR_Managment.Application.Features.LeaveAllocations.Requests.Queries;
 using HR_Managment.Application.Features.LeaveRequests.Requests.Queries;
 using HR_Managment.Application.Features.LeaveTypes.Requests.Queries;
 using HR_Managment.Application.Persistence.Contracts;
-using HR_Managment.Domain.DTOs;
+using HR_Managment.Application.DTOs;
 using MediatR;
 using System;
 using System.Collections.Generic;
