@@ -1,18 +1,10 @@
 ﻿using AutoMapper;
 using HR_Managment.Application.DTOs.LeaveRequest;
-using HR_Managment.Application.Features.LeaveAllocations.Requests.Queries;
 using HR_Managment.Application.Features.LeaveRequests.Requests.Queries;
-using HR_Managment.Application.Features.LeaveTypes.Requests.Queries;
 using HR_Managment.Application.Persistence.Contracts;
-using HR_Managment.Application.DTOs;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HR_Managment.Application.Features.LeaveRequest.Handlers.Queries
+namespace HR_Managment.Application.Features.LeaveRequests.Handlers.Queries
 {
     public class GetLeaveRequestListRequestHandler : IRequestHandler<GetLeaveRequestListRequest, List<LeaveRequestListDTO>>
     {
