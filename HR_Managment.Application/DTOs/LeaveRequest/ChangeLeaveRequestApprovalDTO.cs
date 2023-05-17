@@ -9,7 +9,7 @@ namespace HR_Managment.Application.DTOs.LeaveRequest
 {
     public class ChangeLeaveRequestApprovalDTO : BaseDTO
     {
-        public bool? Aproved { get; set; }
+        public bool? Approved { get; set; }
 
     }
 }
