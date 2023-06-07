@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HR_Managment.Application.DTOs.LeaveRequest
 {
-    public class CreateLeaveRequestsDTO : BaseDTO
+    public class CreateLeaveRequestsDTO : BaseDTO,ILeaveRequestDTO
     {
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

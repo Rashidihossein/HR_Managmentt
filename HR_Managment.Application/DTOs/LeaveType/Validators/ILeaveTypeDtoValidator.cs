@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace HR_Managment.Application.DTOs.LeaveType.Validators
 {
-    public class CreateLeaveTypeDtoValidator: AbstractValidator<CreateLeaveTypeDTO>
+    public class ILeaveTypeDtoValidator: AbstractValidator<ILeaveTypeDTO>
     {
-        public CreateLeaveTypeDtoValidator()
+        public ILeaveTypeDtoValidator()
         {
             RuleFor(p => p.Name).NotEmpty()
                 .WithMessage("نام نمی تواند خالی باشد")
