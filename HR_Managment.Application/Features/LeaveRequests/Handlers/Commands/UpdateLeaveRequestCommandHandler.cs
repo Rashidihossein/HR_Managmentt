@@ -7,7 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FluentValidation;
 using System.Threading.Tasks;
+using ValidationException = HR_Managment.Application.Exceptions.ValidationException;
 
 namespace HR_Managment.Application.Features.LeaveRequests.Handlers.Commands
 {
@@ -31,7 +33,7 @@ namespace HR_Managment.Application.Features.LeaveRequests.Handlers.Commands
             var validationResult = await validator.ValidateAsync(request.LeaveRequestDTO);
 
             if (validationResult.IsValid == false)
-                throw new Exception();
+                throw new ValidationException(validationResult);
 
             var leaveRequest = await _leaveRequestRepository.Get(request.Id);
             if(request.LeaveRequestDTO != null) { 

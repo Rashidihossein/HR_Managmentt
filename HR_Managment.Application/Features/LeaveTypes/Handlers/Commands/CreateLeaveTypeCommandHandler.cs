@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HR_Managment.Application.Exceptions;
 
 namespace HR_Managment.Application.Features.LeaveTypes.Handlers.Commands
 {
@@ -30,7 +31,7 @@ namespace HR_Managment.Application.Features.LeaveTypes.Handlers.Commands
 
             if(validationResult.IsValid == false)
             {
-                throw new Exception();
+                throw new ValidationException(validationResult);
             }
 
             #endregion
